@@ -1,17 +1,5 @@
 /*
    
-    Template Name : Rolling - Freelancer Portfolio Template
-    Author : UiPasta Team
-    Website : http://www.uipasta.com/
-    Support : http://www.uipasta.com/support/
-	
-	
-*/
-
-
-
-/*
-   
    Table Of Content
    
    1. Preloader
@@ -26,6 +14,7 @@
   10. Testimonial Carousel/Slider
   11. Statistics Counter
   12. Google Map
+  13. Lazy Load
  
 
 */
@@ -222,5 +211,9 @@
               
 		   
             });
+
+        $('img.img-responsive').lazyload();
+
+        console.log("oui");
 
    })(jQuery);
