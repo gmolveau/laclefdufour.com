@@ -24,15 +24,6 @@
     'use strict';
 
     jQuery(document).ready(function () {
-
-        
-       /* Preloader */
-		
-        // $(window).on('load', function() {
-        //   $('body').addClass('loaded');
-        // });
-		
-		
 		
        /* Smooth Scroll */
 
@@ -43,9 +34,7 @@
             }, 1000);
             e.preventDefault();
         });
-		
-
-
+	
        
        /* Scroll Naviagation Background Change with Sticky Navigation */
 		 
@@ -76,9 +65,9 @@
 		
 		
 		
-        /* Scroll To Top */
+      /* Scroll To Top */
 		
-        $(window).scroll(function(){
+      $(window).scroll(function(){
         if ($(this).scrollTop() >= 500) {
             $('.scroll-to-top').fadeIn();
          } else {
@@ -91,19 +80,6 @@
 		  $('html, body').animate({scrollTop : 0},800);
 		  return false;
 	    });
-		
-		
-		
-		
-        /* Typed.js */
-		
-        $(window).load(function(){
-        $(".typing").typed({
-            strings: ["I am A Freelancer.", "I Design Websites.", "I Live in New York."],    /* You can change the home section typing text from
-	                                                                                            here and do not use "&" use "and" */
-            typeSpeed: 50
-          });
-         });
         
 		 
         /* Parallax Background */
@@ -121,7 +97,11 @@
 		
         /* Portfolio Filtering */
 
-        $('.portfolio-inner').mixItUp();
+        $('.portfolio-inner').mixItUp({
+          selectors: {
+            filter: '.filter-portfolio'
+          }
+        });
 
 
        
@@ -150,13 +130,43 @@
                 return item.el.attr('title');
               }
             }
-		  
-		  
           });
 
+
+        /* Portfolio Filtering */
+        $('.tourisme-inner').mixItUp({
+          selectors: {
+            filter: '.filter-tourisme'
+          }
+        });
        
-	   
-		 
+        /* Magnific Popup */
+        $('.tourisme-popup').magnificPopup({
+            type: 'image',
+      
+            gallery: { enabled: true },
+            zoom: { enabled: true,
+              duration: 500
+            },
+      
+            image:{
+               markup: '<div class="mfp-figure tourisme-pop-up">'+
+               '<div class="mfp-close"></div>'+
+               '<div class="mfp-img"></div>'+
+               '<div class="mfp-bottom-bar tourisme_title">'+
+               '<div class="mfp-title"></div>'+
+               '<div class="mfp-counter"></div>'+
+               '</div>'+
+               '</div>',
+
+               titleSrc:function(item){
+                return item.el.attr('title');
+              }
+            }
+          });
+
+
+
         /* Testimonial Carousel/Slider */
 
         $(".testimonial-carousel-list").owlCarousel({
@@ -175,25 +185,6 @@
             transitionStyle : "backSlide"
         });
 		
-		
-		
-		
-        /* Statistics Counter */
-		
-        $('.statistics').appear(function() {
-           var counter = $(this).find('.statistics-count');
-           var toCount = counter.data('count');
-      
-           $(counter).countTo({
-           from: 0,
-           to: toCount,
-           speed: 5000,
-           refreshInterval: 50
-           })
-           });
-		   
-		  
-         
          /* Google Map */
 		 
          $('#my-address').gMap({
@@ -214,6 +205,13 @@
 
         $('img.img-responsive').lazyload();
 
-        console.log("oui");
+        // Google Analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXXXXX-X', 'auto');
+        ga('send', 'pageview');
 
    })(jQuery);
