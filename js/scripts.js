@@ -172,7 +172,7 @@
         $(".testimonial-carousel-list").owlCarousel({
             items: 1,
             autoPlay: true,
-            stopOnHover: false,
+            stopOnHover: true,
             navigation: true,
             navigationText: ["<i class='fa fa-long-arrow-left fa-2x owl-navi'></i>", "<i class='fa fa-long-arrow-right fa-2x owl-navi'></i>"],
             itemsDesktop: [1199, 1],
