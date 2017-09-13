@@ -401,7 +401,9 @@ fieldset {
 
 /* Portfolio */
 
-.portfolio {}
+.portfolio {
+  background-color: #F9F9F9;
+}
 
 .portfolio-inner .mix {
     display: none;
@@ -505,7 +507,7 @@ ul.portfolio li.active {
 /* Testimonial */
 
 .testimonial-section {
-    background: #F9F9F9;
+  /*background: #F9F9F9;*/
 }
 
 .testimonial-carousel-list {
@@ -659,7 +661,7 @@ ul.tourisme li.active {
 /* Services */
 
 .services-section {
-  /* background-color: #F9F9F9; */
+  background-color: #F9F9F9;
 }
 
 .services-section hr {
@@ -668,12 +670,34 @@ ul.tourisme li.active {
   margin-left: 0px;
 }
 
+.services-section .services-detail {
+  border-radius: 4px;
+  border-bottom-right-radius: 20%;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 0px;
+  padding: 60px 40px 60px 40px;
+  margin-top: 32px;
+}
+
+.services-section .services-detail:hover {
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+.services-section .services-detail .fa {
+  font-size: 42px;
+}
+
 
 
 /* Contact Us */
 
 .contact-us {
-	background-color: #f9f9f9;
+	/*background-color: #f9f9f9;*/
 }
 
 .contact-us-detail {
