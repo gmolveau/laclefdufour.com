@@ -15,7 +15,9 @@
   11. Statistics Counter
   12. Google Map
   13. Lazy Load
- 
+  14. Google Analytics
+  15. Multi-Langues
+
 
 */
 
@@ -59,21 +61,20 @@
         $('body').scrollspy({
             target: '.navbar-collapse',
             offset: 195
-        
-		 });
+        });
 		 
 		
 		
 		
       /* Scroll To Top */
 		
-      $(window).scroll(function(){
-        if ($(this).scrollTop() >= 500) {
-            $('.scroll-to-top').fadeIn();
-         } else {
-            $('.scroll-to-top').fadeOut();
-         }
-	   });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) {
+                $('.scroll-to-top').fadeIn();
+            } else {
+                $('.scroll-to-top').fadeOut();
+            }
+        });
 	
 	
 	    $('.scroll-to-top').click(function(){
@@ -185,27 +186,30 @@
             transitionStyle : "backSlide"
         });
 		
-         /* Google Map */
+         /* 12. Google Map */
 		 
          $('#my-address').gMap({
             zoom: 8,
             scrollwheel: true,
             maptype: 'ROADMAP',
             markers:[
-            {
-            address: "48 La Touche Pichard, 35720 Plesder",  /* You can change your address from here */
-            html: "<b>Adresse</b>: <br> 48 La Touche Pichard, 35720 Plesder, France",   /* You can change display address text from here */
-            popup: true
-            }
+              {
+                address: "48 La Touche Pichard, 35720 Plesder",
+                html: "<b>Adresse</b>: <br> 48 La Touche Pichard, 35720 Plesder, France",
+                popup: true
+              }
             ]
-            });
+          });
               
 		   
             });
 
+
+        /* 13. Lazy Load */
         $('img.img-responsive').lazyload();
 
-        // Google Analytics
+
+        // 14. Google Analytics
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -213,5 +217,6 @@
 
         ga('create', 'UA-XXXXXXXX-X', 'auto');
         ga('send', 'pageview');
+
 
    })(jQuery);
