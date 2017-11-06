@@ -6,30 +6,30 @@ var expressions = {
 
     bouton_fr: {
         fr: ``,
-        en: `<a onclick="translateTo('fr'); return false;"><i class="flag-icon flag-icon-fr"></i></a>`,
-        es: `<a onclick="translateTo('fr'); return false;"><i class="flag-icon flag-icon-fr"></i></a>`,
-        de: `<a onclick="translateTo('fr'); return false;"><i class="flag-icon flag-icon-fr"></i></a>`,
+        en: `<a onclick="translateTo('fr'); return false;"><i class="flag-icon flag-icon-fr"></i> French </a>`,
+        es: `<a onclick="translateTo('fr'); return false;"><i class="flag-icon flag-icon-fr"></i> Francés </a>`,
+        de: `<a onclick="translateTo('fr'); return false;"><i class="flag-icon flag-icon-fr"></i> Französisch </a>`,
     },
 
     bouton_de: {
-        fr: `<a onclick="translateTo('de'); return false;"><i class="flag-icon flag-icon-de"></i></a>`,
-        en: `<a onclick="translateTo('de'); return false;"><i class="flag-icon flag-icon-de"></i></a>`,
-        es: `<a onclick="translateTo('de'); return false;"><i class="flag-icon flag-icon-de"></i></a>`,
+        fr: `<a onclick="translateTo('de'); return false;"><i class="flag-icon flag-icon-de"></i> Allemand </a>`,
+        en: `<a onclick="translateTo('de'); return false;"><i class="flag-icon flag-icon-de"></i> German</a>`,
+        es: `<a onclick="translateTo('de'); return false;"><i class="flag-icon flag-icon-de"></i> Alemán </a>`,
         de: ``,
     },
 
     bouton_en: {
-        fr: `<a onclick="translateTo('en'); return false;"><i class="flag-icon flag-icon-gb"></i></a>`,
+        fr: `<a onclick="translateTo('en'); return false;"><i class="flag-icon flag-icon-gb"></i> Anglais </a>`,
         en: ``,
-        es: `<a onclick="translateTo('en'); return false;"><i class="flag-icon flag-icon-gb"></i></a>`,
-        de: `<a onclick="translateTo('en'); return false;"><i class="flag-icon flag-icon-gb"></i></a>`,
+        es: `<a onclick="translateTo('en'); return false;"><i class="flag-icon flag-icon-gb"></i> Inglés </a>`,
+        de: `<a onclick="translateTo('en'); return false;"><i class="flag-icon flag-icon-gb"></i> Englisch </a>`,
     },
 
     bouton_es: {
-        fr: `<a onclick="translateTo('es'); return false;"><i class="flag-icon flag-icon-es"></i></a>`,
-        en: `<a onclick="translateTo('es'); return false;"><i class="flag-icon flag-icon-es"></i></a>`,
+        fr: `<a onclick="translateTo('es'); return false;"><i class="flag-icon flag-icon-es"></i> Espagnol </a>`,
+        en: `<a onclick="translateTo('es'); return false;"><i class="flag-icon flag-icon-es"></i> Spanish </a>`,
         es: ``,
-        de: `<a onclick="translateTo('es'); return false;"><i class="flag-icon flag-icon-es"></i></a>`,
+        de: `<a onclick="translateTo('es'); return false;"><i class="flag-icon flag-icon-es"></i> Spanisch </a>`,
     },
 
     hello: {
@@ -39,12 +39,51 @@ var expressions = {
         de: "hello_de",
     },
 
+    /* 
+     * MENU 
+     */
     menu_a_propos: {
         fr: "a propos",
         en: "about",
         es: "acerca de",
         de: "Über",
-    }
+    },
+    menu_decouvrir: {
+        fr: "decouvrir",
+        en: "discover",
+        es: "descubrir",
+        de: "entdecken",
+    },
+    menu_tourisme: {
+        fr: "tourisme",
+        en: "tourism",
+        es: "turismo",
+        de: "Tourismus",
+    },
+    menu_avis: {
+        fr: "avis",
+        en: "testimonials",
+        es: "testimonios",
+        de: "Zeugnisse",
+    },
+    menu_services: {
+        fr: "services",
+        en: "services",
+        es: "servicios",
+        de: "Unterkünfte",
+    },
+    menu_contact: {
+        fr: "contact",
+        en: "about",
+        es: "contacto",
+        de: "kontakt",
+    },
+    menu_traduction: {
+        fr: "Traduction",
+        en: "Translate",
+        es: "Traducir",
+        de: "Übersetzen",
+    },
 
 }
 
